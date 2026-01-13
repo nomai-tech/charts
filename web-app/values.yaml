@@ -1,8 +1,7 @@
 replicaCount: 1
 
 image:
-  repository: pdr.jonbesga.com/relationshiptimelines-web
-  tag: "20260112163004"
+  name: ""
   pullPolicy: IfNotPresent
 
 imagePullSecrets:
@@ -28,12 +27,6 @@ resources:
 ingress:
   enabled: true
   className: ""
-  annotations:
-    external-dns.alpha.kubernetes.io/hostname: jon.relationshiptimelines.nomaitech.com
-    external-dns.alpha.kubernetes.io/cloudflare-proxied: "true"
-  hosts:
-    - host: jon.relationshiptimelines.nomaitech.com
-      paths:
-        - path: /
-          pathType: Prefix
+  annotations: {}
+  hosts: []
   tls: []

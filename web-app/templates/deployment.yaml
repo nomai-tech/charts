@@ -22,7 +22,7 @@ spec:
       {{- end }}
       containers:
         - name: {{ include "web-app.name" . }}
-          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          image: "{{ required \"image.name is required\" .Values.image.name }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
             - name: http
