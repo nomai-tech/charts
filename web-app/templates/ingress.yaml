@@ -5,22 +5,30 @@ metadata:
   name: {{ include "web-app.fullname" . }}
   labels:
     {{- include "web-app.labels" . | nindent 4 }}
-  {{- with .Values.ingress.annotations }}
+  {{- $annotations := .Values.ingress.annotations | default dict }}
+  {{- if and .Values.ingress.host (not (hasKey $annotations "external-dns.alpha.kubernetes.io/hostname")) }}
+  {{- $_ := set $annotations "external-dns.alpha.kubernetes.io/hostname" .Values.ingress.host }}
+  {{- end }}
+  {{- if $annotations }}
   annotations:
-    {{- toYaml . | nindent 4 }}
+    {{- toYaml $annotations | nindent 4 }}
   {{- end }}
 spec:
   {{- if .Values.ingress.className }}
   ingressClassName: {{ .Values.ingress.className }}
   {{- end }}
   rules:
-    {{- range required "ingress.hosts must include at least one host" .Values.ingress.hosts }}
-    - host: {{ .host }}
+    {{- $hosts := .Values.ingress.hosts -}}
+    {{- if .Values.ingress.host -}}
+    {{- $hosts = list (dict "host" .Values.ingress.host "paths" (list (dict "path" "/" "pathType" "Prefix"))) -}}
+    {{- end }}
+    {{- range $hosts }}
+    - host: {{ required "ingress.host is required" .host }}
       http:
         paths:
           {{- range .paths }}
-          - path: {{ .path }}
-            pathType: {{ .pathType }}
+          - path: {{ default "/" .path }}
+            pathType: {{ default "Prefix" .pathType }}
             backend:
               service:
                 name: {{ include "web-app.fullname" $ }}
