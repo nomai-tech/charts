@@ -1,0 +1,64 @@
+apiVersion: v1
+entries:
+  web-app:
+  - apiVersion: v2
+    appVersion: "1.0"
+    created: "2026-01-24T20:59:12.825955584Z"
+    description: Generic web app chart
+    digest: 9afa02420a0d42386176b517d218581cd8fb22202da2be7bf1d154e1220b2d36
+    name: web-app
+    type: application
+    urls:
+    - web-app-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: "1.0"
+    created: "2026-01-24T20:59:12.825856687Z"
+    description: Generic web app chart
+    digest: 1c183e931c540988819d07f9a9096d42582aac8eb0d608a478109bdd528b66e8
+    name: web-app
+    type: application
+    urls:
+    - web-app-0.1.0.tgz
+    version: 0.1.0
+  - apiVersion: v2
+    appVersion: "1.0"
+    created: "2026-01-24T20:59:12.825760496Z"
+    description: Generic web app chart
+    digest: c2ceac039a1e2cd7d6eb18a8f09ff5728fa898b06cfe258ab18c1dbe98f87f6a
+    name: web-app
+    type: application
+    urls:
+    - web-app-0.0.4.tgz
+    version: 0.0.4
+  - apiVersion: v2
+    appVersion: "1.0"
+    created: "2026-01-24T20:59:12.825648424Z"
+    description: Generic web app chart
+    digest: cf0892ded8b23d9022b7b3865a02ca9e52d2a18c97ca7757b9b09ab6dc7e6798
+    name: web-app
+    type: application
+    urls:
+    - web-app-0.0.3.tgz
+    version: 0.0.3
+  - apiVersion: v2
+    appVersion: "1.0"
+    created: "2026-01-24T20:59:12.825538977Z"
+    description: Generic web app chart
+    digest: 9055f15843ac767787231446796b7f4e0e938d1f30689de96ac9f113a4d74a10
+    name: web-app
+    type: application
+    urls:
+    - web-app-0.0.2.tgz
+    version: 0.0.2
+  - apiVersion: v2
+    appVersion: "1.0"
+    created: "2026-01-24T20:59:12.825419271Z"
+    description: Generic web app chart
+    digest: dec737d28e932a4834ef36a5c7bedfcdf2ab578a4036d876df8ef28441b4a219
+    name: web-app
+    type: application
+    urls:
+    - web-app-0.0.1.tgz
+    version: 0.0.1
+generated: "2026-01-24T20:59:12.825086012Z"
