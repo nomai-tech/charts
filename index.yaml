@@ -3,7 +3,17 @@ entries:
   web-app:
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2026-01-24T21:01:07.470985284Z"
+    created: "2026-01-24T21:01:58.478049569Z"
+    description: Generic web app chart
+    digest: e82a249ed4cc08d164e3b5efbc143cf45606e0f5608885a97c48b38926ddd8be
+    name: web-app
+    type: application
+    urls:
+    - web-app-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: "1.0"
+    created: "2026-01-24T21:01:58.477953037Z"
     description: Generic web app chart
     digest: bbe57064620b20a07d793299c613c25a6254e4674a36e3d4c19e3277c04dd7c2
     name: web-app
@@ -13,7 +23,7 @@ entries:
     version: 0.1.0
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2026-01-24T21:01:07.470887559Z"
+    created: "2026-01-24T21:01:58.477860572Z"
     description: Generic web app chart
     digest: c2ceac039a1e2cd7d6eb18a8f09ff5728fa898b06cfe258ab18c1dbe98f87f6a
     name: web-app
@@ -23,7 +33,7 @@ entries:
     version: 0.0.4
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2026-01-24T21:01:07.470791238Z"
+    created: "2026-01-24T21:01:58.477766895Z"
     description: Generic web app chart
     digest: cf0892ded8b23d9022b7b3865a02ca9e52d2a18c97ca7757b9b09ab6dc7e6798
     name: web-app
@@ -33,7 +43,7 @@ entries:
     version: 0.0.3
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2026-01-24T21:01:07.470677142Z"
+    created: "2026-01-24T21:01:58.477662107Z"
     description: Generic web app chart
     digest: 9055f15843ac767787231446796b7f4e0e938d1f30689de96ac9f113a4d74a10
     name: web-app
@@ -43,7 +53,7 @@ entries:
     version: 0.0.2
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2026-01-24T21:01:07.470540033Z"
+    created: "2026-01-24T21:01:58.47756273Z"
     description: Generic web app chart
     digest: dec737d28e932a4834ef36a5c7bedfcdf2ab578a4036d876df8ef28441b4a219
     name: web-app
@@ -51,4 +61,4 @@ entries:
     urls:
     - web-app-0.0.1.tgz
     version: 0.0.1
-generated: "2026-01-24T21:01:07.470312413Z"
+generated: "2026-01-24T21:01:58.477352873Z"
